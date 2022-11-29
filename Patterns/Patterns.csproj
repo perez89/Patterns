@@ -2,12 +2,18 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Behavioral\Strategy\" />
-    <Folder Include="Creational\" />
+    <Compile Remove="Behavioral\Strategy\Duck\NoWithWings.cs" />
+    <Compile Remove="Behavioral\Strategy\Travel\Driver\Driver.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Behavioral\Strategy\Duck\NewFolder\" />
+    <Folder Include="Creational\Factory\" />
+    <Folder Include="Creational\AbstractFactory\" />
     <Folder Include="Structural\" />
   </ItemGroup>
 
